@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubhankar Paria — Full Stack Developer</title>
+<meta name="description" content="Portfolio of Rohan Sharma, Full Stack Developer specializing in React, Node.js and modern web technologies.">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style-update.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR / PROGRESS BAR ============ -->
+<div class="scroll-progress"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
+
+<!-- ============ SIDE SOCIAL RAIL (desktop only) ============ -->
+<div class="side-rail side-rail-left d-none d-xl-flex">
+  <div class="side-rail-line"></div>
+  <div class="d-flex flex-column gap-3">
+    <a href="https://github.com/shubhankarparia" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.linkedin.com/in/shubhankar-paria-390573284/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="#" target="_blank" aria-label="LeetCode"><i class="bi bi-code-square"></i></a>
+    <!-- <a href="#" target="_blank" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a> -->
+  </div>
+</div>
+<div class="side-rail side-rail-right d-none d-xl-flex">
+  <a href="mailto:shubhankarparia2005@gmail.com" class="side-rail-email">shubhankarparia2005@gmail.com</a>
+  <div class="side-rail-line"></div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><span class="brand-bracket">&lt;</span>Shubhankar<span class="brand-accent">.dev</span><span class="brand-bracket">/&gt;</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+      <span class="toggler-line"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home"><span class="nav-index">00</span>Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about"><span class="nav-index">01</span>About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills"><span class="nav-index">02</span>Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience"><span class="nav-index">03</span>Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-index">04</span>Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications"><span class="nav-index">05</span>Certs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-index">06</span>Contact</a></li>
+        <li class="nav-item ms-lg-2">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+            <i class="bi bi-sun-fill"></i><i class="bi bi-moon-stars-fill"></i>
+          </button>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="btn btn-hire ms-lg-2">Hire Me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="home">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <p class="eyebrow" data-reveal>// 00.  welcome</p>
+        <h2 class="hero-greeting" data-reveal>Hi, my name is</h2>
+        <h1 class="hero-name" data-reveal>Shubhankar Paria.</h1>
+        <h2 class="hero-tagline" data-reveal>I build things for the web.</h2>
+        <p class="hero-desc" data-reveal>
+          I'm a <span class="typed-role" id="typedRole"></span><span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-sub" data-reveal>
+          Final-year B.Tech student and full stack developer focused on crafting fast,
+          accessible, end-to-end web applications — from a React interface down to a
+          well-indexed MySQL schema. Currently open to internship and full-time roles.
+        </p>
+        <div class="hero-cta d-flex flex-wrap gap-3" data-reveal>
+          <a href="#contact" class="btn btn-accent-solid">Hire Me</a>
+          <a href="assets/Shubhankar Paria Updated 2026 cv.pdf" download class="btn btn-accent-outline">
+            <i class="bi bi-download me-2"></i>Download Resume
+          </a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+        </div>
+      </div>
+      <!-- <div class="col-lg-5 text-center" data-reveal>
+        <div class="profile-frame mx-auto">
+          <div class="profile-frame-border"></div>
+          <div class="profile-avatar">SP</div>
+        </div>
+      </div> -->
+      <div class="col-lg-5 text-center" data-reveal>
+        <div class="profile-frame mx-auto">
+          <div class="profile-frame-border"></div>
+
+          <div class="profile-avatar">
+            <img src="assets/profile.png" alt="Shubhankar Paria" class="profile-img">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <span class="scroll-indicator-mouse"><span></span></span>
+    <span class="scroll-indicator-text">scroll</span>
+  </a>
+</header>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">01.</span> About Me</h2>
+    <div class="row gy-5 align-items-start">
+      <div class="col-lg-7" data-reveal>
+        <p>
+          Hello! I'm Shubhankar , a full stack developer based in West Bengal, India, currently
+          finishing my B.Tech in Computer Science. My journey into code started with a
+          simple curiosity: I wanted to know how the websites I used every day actually
+          worked under the hood. That curiosity turned into hundreds of hours building,
+          breaking, and rebuilding small projects — and eventually into a career direction.
+        </p>
+        <p>
+          Today, I focus on building complete, production-ready web applications: a
+          responsive React front end talking to an Express API, backed by a properly
+          normalized MySQL or MongoDB database. I care about the details most people never
+          see — clean commit history, sensible folder structure, and code that the next
+          developer (often future me) can actually read.
+        </p>
+        <p>
+          Outside of pure development, I'm equally comfortable auditing a site's technical
+          SEO or setting up a Google Analytics dashboard, which means I don't just build
+          pages — I build pages that are meant to be found and used.
+        </p>
+
+        <div class="row mt-4 g-3">
+          <div class="col-sm-6">
+            <h6 class="about-subhead"><i class="bi bi-translate me-2"></i>Languages Known</h6>
+            <p class="text-muted-slate small mb-0">English, Hindi, Bengali</p>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="about-subhead"><i class="bi bi-controller me-2"></i>Hobbies &amp; Interests</h6>
+            <p class="text-muted-slate small mb-0">Competitive coding, Cricket, Photography</p>
+          </div>
+          <div class="col-sm-6">
+            <h6 class="about-subhead"><i class="bi bi-geo-alt me-2"></i>Based In</h6>
+            <p class="text-muted-slate small mb-0">Kolkata, West Bengal, India (open to remote)</p>
+          </div>
+          <!-- <div class="col-sm-6">
+            <h6 class="about-subhead"><i class="bi bi-lightbulb me-2"></i>Fun Fact</h6>
+            <p class="text-muted-slate small mb-0">I've solved 500+ problems across coding platforms</p>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="col-lg-5" data-reveal>
+        <div class="glass-card h-100">
+          <h6 class="about-subhead mb-3"><i class="bi bi-stars me-2"></i>Core Strengths</h6>
+          <ul class="strength-list">
+            <li><i class="bi bi-check-circle-fill"></i>End-to-end ownership, from schema design to deployment</li>
+            <li><i class="bi bi-check-circle-fill"></i>Clean, componentized, well-documented code</li>
+            <li><i class="bi bi-check-circle-fill"></i>Fast learner — comfortable picking up new stacks quickly</li>
+            <li><i class="bi bi-check-circle-fill"></i>Strong grasp of SEO fundamentals alongside development</li>
+            <li><i class="bi bi-check-circle-fill"></i>Clear communicator in cross-functional teams</li>
+          </ul>
+          <hr class="glass-divider">
+          <h6 class="about-subhead mb-3"><i class="bi bi-bullseye me-2"></i>Career Objective</h6>
+          <p class="text-muted-slate small mb-0">
+            To join a product-focused engineering team where I can build reliable,
+            user-first web applications, keep learning modern tooling, and grow into a
+            developer who ships things people actually enjoy using.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section section-alt" id="education">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">—</span> Education</h2>
+    <div class="timeline" data-reveal>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+            <h5 class="mb-1">B.Tech in Computer Science &amp; Engineering</h5>
+            <span class="badge-year">2024 — 2027</span>
+          </div>
+          <p class="text-accent-2 mb-2">Brainware University</p>
+          <p class="text-muted-slate small mb-2">CGPA: 8.23 / 10</p>
+          <p class="text-muted-slate small mb-0">
+            Relevant coursework: Data Structures &amp; Algorithms, Database Management
+            Systems, Operating Systems, Machine Learning, Artificial Intelligence.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+            <h5 class="mb-1">Diploma in Computer Science &amp; & Technology</h5>
+            <span class="badge-year">2022 — 2024</span>
+          </div>
+          <p class="text-accent-2 mb-2">Central Calcutta &amp; Polytechnic</p>
+          <p class="text-muted-slate small mb-2">Percentage: 73%</p>
+          <p class="text-muted-slate small mb-0">
+            Relevant coursework: Data Structures &amp; Algorithms, Database Management
+            Systems, Operating Systems, Computer Networks, Software Engineering, Web
+            Technologies.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+            <h5 class="mb-1">Higher Secondary (Class XII), Science</h5>
+            <span class="badge-year">2020 — 2022</span>
+          </div>
+          <p class="text-accent-2 mb-2">Kanaidighi Deshapran Vidyapith</p>
+          <p class="text-muted-slate small mb-0">Percentage: 90.40% — Physics, Chemistry, Mathematics, Computer Science</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+            <h5 class="mb-1">Secondary (Class X)</h5>
+            <span class="badge-year">2019 — 2020</span>
+          </div>
+          <p class="text-accent-2 mb-2">Nachinda Jibon Krishna High School</p>
+          <p class="text-muted-slate small mb-0">Percentage: 49%</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">02.</span> Skills</h2>
+    <p class="section-lead" data-reveal>A snapshot of the languages, frameworks and tools I work with day to day.</p>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-code-slash"></i>Programming</h6>
+          <div class="skill-tags">
+            <span>C</span><span>PHP</span><span>Java</span><span>Python</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-globe2"></i>Web Development</h6>
+          <div class="skill-tags">
+            <span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Tailwind CSS</span><span>React</span><span>Node.js</span><span>Express.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-database"></i>Database</h6>
+          <div class="skill-tags">
+            <span>MySQL</span><span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-tools"></i>Tools</h6>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-graph-up-arrow"></i>SEO</h6>
+          <div class="skill-tags">
+            <span>On-Page SEO</span><span>Off-Page SEO</span><span>Technical SEO</span><span>Keyword Research</span><span>Google Analytics</span><span>Search Console</span><span>Tag Manager</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-megaphone"></i>Digital Marketing</h6>
+          <div class="skill-tags">
+            <span>Google Ads</span><span>Meta Ads</span><span>Email Marketing</span><span>Content Marketing</span><span>Performance Marketing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12" data-reveal>
+        <div class="skill-card">
+          <h6 class="skill-card-title"><i class="bi bi-people"></i>Soft Skills</h6>
+          <div class="skill-tags">
+            <span>Communication</span><span>Teamwork</span><span>Leadership</span><span>Problem Solving</span><span>Time Management</span><span>Critical Thinking</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Technical Stack -->
+    <h3 class="section-subtitle mt-5" data-reveal>Technical Stack</h3>
+    <div class="row g-3">
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-layout-text-window-reverse"></i><span>Frontend</span><small>React, Bootstrap, Tailwind</small></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-hdd-network"></i><span>Backend</span><small>Node.js, Express.js, PHP</small></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-database-fill-gear"></i><span>Database</span><small>MySQL, MongoDB</small></div>
+      </div>
+      <!-- <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-cloud-arrow-up"></i><span>Cloud</span><small>Vercel, Render, Netlify</small></div>
+      </div> -->
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-gear-wide-connected"></i><span>DevOps</span><small>Docker (basics), CI/CD</small></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-git"></i><span>Version Control</span><small>Git &amp; GitHub</small></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-search"></i><span>SEO Tools</span><small>Search Console, GA4</small></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stack-pill"><i class="bi bi-bar-chart-line"></i><span>Marketing Tools</span><small>Google Ads, Meta Ads</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">03.</span> Experience</h2>
+
+    <div class="exp-tabs" data-reveal>
+      <div class="nav flex-column flex-sm-row nav-pills mb-4" id="exp-tab" role="tablist">
+        <button class="exp-tab-btn active" data-bs-toggle="pill" data-bs-target="#exp-internship" type="button" role="tab">Internship</button>
+        <button class="exp-tab-btn" data-bs-toggle="pill" data-bs-target="#exp-freelance" type="button" role="tab">Freelance</button>
+        <button class="exp-tab-btn" data-bs-toggle="pill" data-bs-target="#exp-training" type="button" role="tab">Training</button>
+      </div>
+      <div class="tab-content">
+
+        <div class="tab-pane fade show active" id="exp-internship" role="tabpanel">
+
+          <h5 class="mb-1">Software Development Intern</h5>
+          <p class="text-accent-2 mb-1">Admission Jagat</p>
+          <p class="text-muted-slate small mb-3"><i class="bi bi-calendar3 me-1"></i>April 2025 — Dec 2025 &nbsp;·&nbsp; Remote</p>
+          <p class="text-muted-slate small mb-2">Stack used: Full Stack developer (PHP, MySql, Laravel, Boostrap)</p>
+          <ul class="check-list">
+            <li>Built and shipped 4 reusable UI components adopted across the internal admin dashboard.</li>
+            <li>Integrated 3 third-party REST APIs, reducing manual data entry by an estimated 40%.</li>
+            <li>Fixed 25+ bugs reported through the internal tracker during the internship period.</li>
+            <li>Wrote unit tests that lifted module test coverage from 52% to 78%.</li>
+          </ul>
+
+          <br>
+          
+          <!-- <h5 class="mb-1">Website Development Intern</h5>
+          <p class="text-accent-2 mb-1">Brightwave Technologies Pvt. Ltd.</p>
+          <p class="text-muted-slate small mb-3"><i class="bi bi-calendar3 me-1"></i>Jun 2025 — Aug 2025 &nbsp;·&nbsp; Remote</p>
+          <p class="text-muted-slate small mb-2">Stack used: React, Node.js, Express.js, MongoDB</p>
+          <ul class="check-list">
+            <li>Built and shipped 4 reusable UI components adopted across the internal admin dashboard.</li>
+            <li>Integrated 3 third-party REST APIs, reducing manual data entry by an estimated 40%.</li>
+            <li>Fixed 25+ bugs reported through the internal tracker during the internship period.</li>
+            <li>Wrote unit tests that lifted module test coverage from 52% to 78%.</li>
+          </ul> -->
+
+        </div>
+    
+
+        <div class="tab-pane fade" id="exp-freelance" role="tabpanel">
+          <h5 class="mb-1">Freelance Web Developer</h5>
+          <p class="text-accent-2 mb-1">Self-employed</p>
+          <p class="text-muted-slate small mb-3"><i class="bi bi-calendar3 me-1"></i>2024 — Present</p>
+          <ul class="check-list">
+            <li>Delivered 6 responsive business websites for small local clients using Bootstrap and vanilla JS.</li>
+            <li>Improved average page-speed scores from 61 to 92 (Lighthouse) via image optimization and lazy loading.</li>
+            <li>Handled full client lifecycle: requirement gathering, design handoff, deployment, and support.</li>
+          </ul>
+        </div>
+
+        <div class="tab-pane fade" id="exp-training" role="tabpanel">
+          <h5 class="mb-1">Industrial &amp; Virtual Training Programs</h5>
+          <p class="text-accent-2 mb-1">IBM</p>
+          <p class="text-muted-slate small mb-3"><i class="bi bi-calendar3 me-1"></i>2026</p>
+          <ul class="check-list">
+            <li>Completed a 6-week industrial training program in Full Stack Web Development (MERN).</li>
+            <li>Completed a virtual internship in Digital Marketing covering SEO, SEM and analytics.</li>
+            <li>Built 3 guided capstone projects as part of structured mentor-led cohorts.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">04.</span> Featured Projects</h2>
+    <p class="section-lead" data-reveal>A few projects I've built end to end — replace these with your own repositories.</p>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-lg-6" data-reveal>
+        <article class="project-card">
+          <div class="project-thumb">
+            <i class="bi bi-heart-pulse"></i>
+            <div class="project-thumb-overlay">
+              <a href="https://github.com/shubhankarparia/Doctor-Appointment" target="_blank" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+              <!-- <a href="#" target="_blank" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a> -->
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-duration">Jan 2025 — June 2025</p>
+            <h5>Euphoria Genx — MERN - Doctor Appointment System</h5>
+            <p class="text-muted-slate small">
+              A MERN-based Doctor Appointment System that allows patients to book appointments, doctors to manage schedules, and administrators to oversee users, appointments, and medical records.
+            </p>
+            <p class="small mb-2">
+              <strong>Challenge:</strong>
+              <span class="text-muted-slate">
+                Preventing appointment scheduling conflicts while managing multiple doctors and patient bookings.
+              </span>
+            </p>
+            <p class="small mb-3">
+              <strong>Solution:</strong>
+              <span class="text-muted-slate">
+                Implemented real-time slot availability, backend validation, and role-based authentication using JWT to ensure secure and conflict-free appointment booking.
+              </span>
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-6" data-reveal>
+        <article class="project-card">
+          <div class="project-thumb">
+            <i class="bi bi-trophy"></i>
+            <!-- <div class="project-thumb-overlay">
+              <a href="#" target="_blank" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div> -->
+          </div>
+          <div class="project-body">
+            <p class="project-duration">Sep 2024 — Nov 2024</p>
+            <h5>YCSAS — Yoga Scoring System</h5>
+            <p class="text-muted-slate small">
+              A web-based Yoga Scoring System that enables judges to evaluate participants, calculate scores automatically, and generate real-time results with secure data management.
+            </p>
+            <p class="small mb-2">
+              <strong>Challenge:</strong>
+              <span class="text-muted-slate">
+                Ensuring accurate and consistent scoring while managing multiple participants and reducing manual calculation errors.
+              </span>
+            </p>
+
+            <p class="small mb-3">
+              <strong>Solution:</strong>
+              <span class="text-muted-slate">
+                Developed a centralized scoring system with automated score calculation, secure data storage, and real-time result generation for judges and administrators.
+              </span>
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Django</span><span>MySQL</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-6" data-reveal>
+        <article class="project-card">
+          <div class="project-thumb">
+            <i class="bi bi-graph-up"></i>
+            <div class="project-thumb-overlay">
+              <a href="#" target="_blank" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-duration">May 2024 — Jul 2024</p>
+            <h5>SiteAudit — Automated SEO Report Tool</h5>
+            <p class="text-muted-slate small">
+              A tool that crawls a given domain and generates an on-page SEO report:
+              missing meta tags, broken links, image alt coverage and Core Web Vitals.
+            </p>
+            <p class="small mb-2"><strong>Challenge:</strong> <span class="text-muted-slate">crawling large sites without hitting rate limits or timeouts.</span></p>
+            <p class="small mb-3"><strong>Solution:</strong> <span class="text-muted-slate">a queued crawler with configurable concurrency built on Node.js streams.</span></p>
+            <div class="project-tags">
+              <span>Node.js</span><span>Express</span><span>Puppeteer</span><span>Chart.js</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-6" data-reveal>
+        <article class="project-card">
+          <div class="project-thumb">
+            <i class="bi bi-chat-dots"></i>
+            <div class="project-thumb-overlay">
+              <a href="#" target="_blank" aria-label="GitHub repository"><i class="bi bi-github"></i></a>
+              <a href="#" target="_blank" aria-label="Live demo"><i class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <p class="project-duration">Feb 2024 — Mar 2024</p>
+            <h5>ChatSpace — Real-Time Messaging App</h5>
+            <p class="text-muted-slate small">
+              A group and one-to-one chat application with read receipts, typing
+              indicators and JWT-secured rooms.
+            </p>
+            <p class="small mb-2"><strong>Challenge:</strong> <span class="text-muted-slate">scaling socket connections without memory leaks.</span></p>
+            <p class="small mb-3"><strong>Solution:</strong> <span class="text-muted-slate">room-scoped namespaces and a Redis adapter for horizontal scaling.</span></p>
+            <div class="project-tags">
+              <span>React</span><span>Socket.IO</span><span>Redis</span><span>MongoDB</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <!-- Mini Projects -->
+    <h3 class="section-subtitle mt-5" data-reveal>Mini &amp; Practice Projects</h3>
+    <div class="row g-3">
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-mortarboard"></i>
+          <h6>College Projects</h6>
+          <p class="text-muted-slate small mb-0">Library management system (Java + MySQL), student attendance tracker.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-lightning-charge"></i>
+          <h6>Practice Projects</h6>
+          <p class="text-muted-slate small mb-0">Weather app, expense tracker, markdown note editor, quiz app.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-diagram-3"></i>
+          <h6>Open Source</h6>
+          <p class="text-muted-slate small mb-0">Merged PRs fixing docs and small bugs in 2 community JS libraries.</p>
+        </div>
+      </div>
+       <!-- </div> -->
+    
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-cloud-sun"></i>
+          <h6>Weather App</h6>
+          <p class="text-muted-slate small mb-0">
+            Real-time weather forecast application using OpenWeather API with city search and responsive UI.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mini Project 2 -->
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-check2-square"></i>
+          <h6>To-Do Manager</h6>
+          <p class="text-muted-slate small mb-0">
+            Task management application with CRUD operations, filters, due dates, and local storage support.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mini Project 3 -->
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-calculator"></i>
+          <h6>Scientific Calculator</h6>
+          <p class="text-muted-slate small mb-0">
+            Responsive calculator supporting arithmetic, percentage, memory functions, and keyboard shortcuts.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mini Project 4 -->
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-journal-text"></i>
+          <h6>Notes App</h6>
+          <p class="text-muted-slate small mb-0">
+            Simple note-taking application with search, edit, delete, and local storage functionality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mini Project 5 -->
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-question-circle"></i>
+          <h6>Quiz Application</h6>
+          <p class="text-muted-slate small mb-0">
+            Interactive quiz platform featuring multiple-choice questions, score calculation, and timer support.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mini Project 6 -->
+      <div class="col-md-4" data-reveal>
+        <div class="mini-project-card">
+          <i class="bi bi-cash-stack"></i>
+          <h6>Expense Tracker</h6>
+          <p class="text-muted-slate small mb-0">
+            Personal finance tracker with income, expenses, balance summary, and transaction history.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">—</span> Services</h2>
+    <p class="section-lead" data-reveal>What I can help you or your team build.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="service-card">
+          <i class="bi bi-layout-text-window"></i>
+          <h6>Frontend Development</h6>
+          <p class="text-muted-slate small mb-0">Responsive, accessible interfaces with React and modern CSS.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="service-card">
+          <i class="bi bi-server"></i>
+          <h6>Backend Development</h6>
+          <p class="text-muted-slate small mb-0">REST APIs, authentication and database design with Node.js.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="service-card">
+          <i class="bi bi-layers"></i>
+          <h6>Full Stack Development</h6>
+          <p class="text-muted-slate small mb-0">End-to-end applications, from database schema to deployment.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="service-card">
+          <i class="bi bi-file-earmark-bar-graph"></i>
+          <h6>Website Audit &amp; SEO</h6>
+          <p class="text-muted-slate small mb-0">Technical SEO audits, keyword research and Core Web Vitals fixes.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="service-card">
+          <i class="bi bi-megaphone"></i>
+          <h6>Digital Marketing</h6>
+          <p class="text-muted-slate small mb-0">Google Ads, Meta Ads and content strategy for growth.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal>
+        <div class="service-card">
+          <i class="bi bi-file-earmark-richtext"></i>
+          <h6>Landing Page Development</h6>
+          <p class="text-muted-slate small mb-0">Conversion-focused single pages built for speed and clarity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS & ACHIEVEMENTS ============ -->
+<section class="section" id="certifications">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">05.</span> Certifications</h2>
+    <div class="row g-3 mb-5">
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cert-card"><i class="bi bi-patch-check-fill"></i>
+          <div><h6>Full Stack Web Development</h6><span class="text-muted-slate small">Meta / Coursera — 2024</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cert-card"><i class="bi bi-patch-check-fill"></i>
+          <div><h6>JavaScript Algorithms &amp; Data Structures</h6><span class="text-muted-slate small">freeCodeCamp — 2023</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cert-card"><i class="bi bi-patch-check-fill"></i>
+          <div><h6>Google Analytics Certification</h6><span class="text-muted-slate small">Google — 2024</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cert-card"><i class="bi bi-patch-check-fill"></i>
+          <div><h6>Fundamentals of Digital Marketing</h6><span class="text-muted-slate small">Google Digital Garage — 2023</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cert-card"><i class="bi bi-patch-check-fill"></i>
+          <div><h6>SEO Fundamentals</h6><span class="text-muted-slate small">SEMrush Academy — 2024</span></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal>
+        <div class="cert-card"><i class="bi bi-patch-check-fill"></i>
+          <div><h6>Database Design Workshop</h6><span class="text-muted-slate small">College Dept. Workshop — 2023</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="section-subtitle" data-reveal>Achievements</h3>
+    <div class="row g-4">
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>2</h3><p>Hackathons Participated</p></div>
+      </div>
+      <!-- <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>3</h3><p>Hackathon Wins / Podiums</p></div>
+      </div> -->
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>50+</h3><p>DSA Problems Solved</p></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>6</h3><p>Freelance Projects Delivered</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESUME ============ -->
+<section class="section section-alt" id="resume">
+  <div class="container text-center">
+    <h2 class="section-title justify-content-center" data-reveal><span class="section-number">—</span> Resume</h2>
+    <p class="section-lead mx-auto" data-reveal style="max-width:560px;">
+      Want the short version? Grab a copy of my resume or view it right here.
+    </p>
+    <div class="d-flex flex-wrap justify-content-center gap-3" data-reveal>
+      <a href="assets/Shubhankar Paria Updated 2026 cv.pdf" download class="btn btn-accent-solid"><i class="bi bi-download me-2"></i>Download Resume</a>
+      <a href="assets/Shubhankar Paria Updated 2026 cv.pdf" target="_blank" class="btn btn-accent-outline"><i class="bi bi-eye me-2"></i>View Online</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GITHUB STATS & CODING PROFILES ============ -->
+<!-- <section class="section" id="github">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">—</span> GitHub &amp; Coding Profiles</h2>
+    <div class="row g-4 mb-4">
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>240+</h3><p>Contributions this year</p></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>10</h3><p>Public Repositories</p></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>65</h3><p>Stars Earned</p></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal>
+        <div class="stat-card"><h3>120</h3><p>Followers</p></div>
+      </div>
+    </div>
+    <div class="glass-card mb-4" data-reveal>
+      <h6 class="about-subhead mb-3"><i class="bi bi-bar-chart-steps me-2"></i>Contribution Graph</h6>
+      <img src="https://ghchart.rshah.org/2F8FFF/octocat" alt="GitHub contribution graph" class="img-fluid rounded" style="width:100%;filter:invert(0.05);">
+      <p class="text-muted-slate small mt-2 mb-0">Replace <code>octocat</code> in the image URL with your own GitHub username.</p>
+    </div>
+    <div class="row g-3" data-reveal>
+      <div class="col-6 col-md-4 col-lg-2"><a href="#" target="_blank" class="profile-pill"><i class="bi bi-github"></i>GitHub</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><a href="#" target="_blank" class="profile-pill"><i class="bi bi-code-square"></i>LeetCode</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><a href="#" target="_blank" class="profile-pill"><i class="bi bi-terminal"></i>HackerRank</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><a href="#" target="_blank" class="profile-pill"><i class="bi bi-cup-hot"></i>CodeChef</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><a href="#" target="_blank" class="profile-pill"><i class="bi bi-braces"></i>Codeforces</a></div>
+      <div class="col-6 col-md-4 col-lg-2"><a href="#" target="_blank" class="profile-pill"><i class="bi bi-journal-code"></i>GeeksforGeeks</a></div>
+    </div>
+  </div>
+</section> -->
+
+<!-- ============ TESTIMONIALS ============ -->
+<!-- <section class="section section-alt" id="testimonials">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">—</span> Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-reveal>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="testimonial-card mx-auto">
+            <i class="bi bi-quote"></i>
+            <p>"Rohan picked up our codebase quickly and consistently shipped clean,
+            well-tested components. He communicates clearly and asks the right
+            questions before writing code."</p>
+            <h6>Ananya Ghosh</h6>
+            <span>Engineering Mentor, Brightwave Technologies</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto">
+            <i class="bi bi-quote"></i>
+            <p>"He rebuilt our site to be genuinely fast and easy to update, and our
+            search traffic improved within weeks. Reliable, and easy to work with."</p>
+            <h6>Vikram Nair</h6>
+            <span>Freelance Client, Retail Business Owner</span>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="testimonial-card mx-auto">
+            <i class="bi bi-quote"></i>
+            <p>"One of the strongest final-year students I've supervised — thorough,
+            curious, and always willing to go one level deeper to understand a
+            problem."</p>
+            <h6>Dr. Sunita Roy</h6>
+            <span>Faculty Advisor, Dept. of CSE</span>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-arrow"><i class="bi bi-chevron-left"></i></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-arrow"><i class="bi bi-chevron-right"></i></span>
+      </button>
+    </div>
+  </div>
+</section> -->
+
+<!-- ============ BLOG ============ -->
+<section class="section" id="blog">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">—</span> From the Blog</h2>
+    <p class="section-lead" data-reveal>Occasional notes on web development, SEO and career lessons.</p>
+    <div class="row g-4">
+      <div class="col-md-4" data-reveal>
+        <a href="#" class="blog-card">
+          <span class="blog-tag">Web Dev</span>
+          <h6>Why I Switched from CSS Modules to Tailwind</h6>
+          <p class="text-muted-slate small">A practical comparison after using both across real projects.</p>
+          <span class="blog-date">Jun 2026</span>
+        </a>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <a href="#" class="blog-card">
+          <span class="blog-tag">SEO</span>
+          <h6>Technical SEO Checklist for Developers</h6>
+          <p class="text-muted-slate small">The 12 checks I run before shipping any client site.</p>
+          <span class="blog-date">Apr 2026</span>
+        </a>
+      </div>
+      <div class="col-md-4" data-reveal>
+        <a href="#" class="blog-card">
+          <span class="blog-tag">Career</span>
+          <h6>What I Learned From My First Internship</h6>
+          <p class="text-muted-slate small">Code review culture, PR etiquette, and asking better questions.</p>
+          <span class="blog-date">Feb 2026</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <h2 class="section-title" data-reveal><span class="section-number">—</span> Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion" data-reveal>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Who are you?</button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">I'm Shubhankar, a final-year B.Tech student and full stack developer who builds React + Node.js applications and also works on technical SEO.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">What technologies do you use?</button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Mainly React, Node.js, Express.js, PHP, Laravel Framework, MySQL and MongoDB, styled with Bootstrap or Tailwind CSS, alongside Git for version control.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Are you available for internships?</button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes — I'm actively looking for internship and full-time opportunities starting immediately.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Can I hire you for a project?</button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Absolutely. Reach out through the contact form below with a short brief and I'll get back to you within a day or two.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Do you work remotely?</button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, I work remotely with clients and teams across time zones and am comfortable with async communication.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">How can I contact you?</button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Use the contact form below, email me directly, or message me on LinkedIn — whichever is easiest for you.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title justify-content-center" data-reveal><span class="section-number">06.</span> Get In Touch</h2>
+    <p class="section-lead text-center mx-auto" data-reveal style="max-width:560px;">
+      I'm currently looking for new opportunities — my inbox is always open, whether
+      you have a question or just want to say hi.
+    </p>
+
+    <div class="row g-5 mt-2">
+      <div class="col-lg-5" data-reveal>
+        <div class="contact-info-item"><i class="bi bi-envelope-fill"></i>
+          <div><span>Email</span><a href="mailto:shubhankarparia2005@gmail.com">shubhankarparia2005@gmail.com</a></div>
+        </div>
+        <div class="contact-info-item"><i class="bi bi-telephone-fill"></i>
+          <div><span>Phone</span><a href="tel:+918768856234">+91 8768856234</a></div>
+        </div>
+        <div class="contact-info-item"><i class="bi bi-geo-alt-fill"></i>
+          <div><span>Location</span><p class="mb-0">West Bengal, India</p></div>
+        </div>
+        <a href="https://wa.me/918768856234" target="_blank" class="btn btn-whatsapp mt-3">
+          <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+        </a>
+
+        <div class="d-flex gap-3 mt-4 social-inline">
+          <a href="#" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" target="_blank" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" target="_blank" aria-label="Medium"><i class="bi bi-medium"></i></a>
+          <a href="#" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-reveal>
+         <form
+          action="https://formsubmit.co/shubhankarparia2005@gmail.com"
+          method="POST"
+          class="contact-form"
+          id="contactForm">
+
+          <!-- Hidden Settings -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Portfolio Contact">
+          <input type="hidden" name="_next" value="thankyou.html">
+          <div class="row g-3">
+            <!-- <p id="formStatus" class="mt-3 text-success fw-semibold"></p> -->
+            <div class="col-md-6">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" name="email" required>
+              <div class="invalid-feedback">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control" name="subject" required>
+              <div class="invalid-feedback">Please enter a subject.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" name="message" rows="5" required></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-accent-solid w-100 w-sm-auto">
+                <i class="bi bi-send me-2"></i>Send Message
+              </button>
+              <p class="form-status mt-3 mb-0" id="formStatus"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner" data-reveal>
+  <div class="container text-center">
+    <h2>Let's build something together.</h2>
+    <p>Have a project in mind or an opening on your team? I'd love to hear about it.</p>
+    <a href="#contact" class="btn btn-cta">Start a Project</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <a class="footer-brand" href="#home"><span class="brand-bracket">&lt;</span>Shubhankar<span class="brand-accent">.dev</span><span class="brand-bracket">/&gt;</span></a>
+        <p class="text-muted-slate small mt-2">
+          Full stack developer building fast, accessible web applications —
+          from React interfaces to well-structured databases.
+        </p>
+        <div class="d-flex gap-3 social-inline mt-3">
+          <a href="#" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" target="_blank" aria-label="X / Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Services</h6>
+        <ul class="footer-links">
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Full Stack Dev</a></li>
+          <li><a href="#services">SEO Optimization</a></li>
+          <li><a href="#services">Digital Marketing</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6>Stay Updated</h6>
+        <p class="text-muted-slate small">Get an occasional note when I publish something new — no spam.</p>
+        <!-- <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="shubhankarparia2005@gmail.com" required>
+          <button type="submit"><i class="bi bi-arrow-right"></i></button>
+        </form> -->
+        <p class="form-status small mb-0" id="newsletterStatus"></p>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <p class="mb-0 small text-muted-slate">&copy; <span id="year"></span> Shubhankar Paria. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#" class="small footer-legal">Privacy Policy</a>
+        <a href="#" class="small footer-legal">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script-update.js"></script>
+</body>
+</html>
